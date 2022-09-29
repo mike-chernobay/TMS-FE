@@ -1,0 +1,19 @@
+.footer {
+    background-color: black;
+    padding-bottom: 27px;
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.footer-icon + .footer-icon {
+    margin-left: 45px;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
