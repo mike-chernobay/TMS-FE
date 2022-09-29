@@ -10,3 +10,9 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+.separator {
+    width: 170px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ec7979;
+}

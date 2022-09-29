@@ -3,50 +3,38 @@
     text-align: center;
 }
 
-.awesome h2 {
+.awesome__title {
     font-size: 36px;
     font-weight: 400;
-    line-height: 150px;
+    padding: 57px 0;
 }
 
-.separator {
-    width: 170px;
-    margin: 0 auto;
-    border-bottom: 1px solid #ec7979;
-}
-
-.awesome h5 {
-    font-size: 18px;
+.awesome__remark {
     color: #86878b;
-    font-weight: 400;
     margin-top: 40px;
 }
 
-.awesome__wrap {
+.awesome-wrap {
     display: flex;
     margin-top: 60px;
 }
 
-.awesome__wrap__item {
+.awesome-item {
     text-align: center;
 }
 
-.awesome__icon {
+.awesome-item__icon {
     width: 92px;
     height: 92px;
+    margin: 0 auto;
     border: 1px solid #ec7979;
-    display: inline-block;
     border-radius: 50%;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.awesome__icon img {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.awesome__wrap__item h4 {
+.awesome-item__title {
     font-family: 'Open Sans';
     font-weight: 700;
     font-size: 24px;
