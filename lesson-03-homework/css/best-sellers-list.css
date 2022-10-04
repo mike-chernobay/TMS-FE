@@ -35,12 +35,12 @@
     margin-top: 40px;
 }
 
-.best-sellers-row:nth-child(even) .best-sellers-row-wrap {
-    flex-direction: row-reverse;
-}
-
 .best-sellers-row:nth-child(even) {
     background-color: rgba(204, 204, 204, 0.6);
+}
+
+.best-sellers-row:nth-child(even) .best-sellers-row-wrap {
+    flex-direction: row-reverse;
 }
 
 .best-sellers-row:nth-child(even) .best-sellers-row-description {
