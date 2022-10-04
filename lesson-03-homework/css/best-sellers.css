@@ -1,6 +1,5 @@
 .best-sellers {
-    padding: 60px 0;
-    background-color: rgba(204, 204, 204, 0.3);
+    padding: 60px 0 248px;
 }
 
 .best-sellers__title {
@@ -26,7 +25,6 @@
 .best-sellers-wrap {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 248px;
 }
 
 .best-sellers-card {
@@ -55,70 +53,4 @@
     font-size: 17px;
     line-height: 20px;
     margin-bottom: 10px;
-}
-
-.link-button {
-    border: none;
-    font-size: 17px;
-    font-weight: 700;
-    line-height: 20px;
-    text-decoration: underline;
-    background-color: transparent;
-}
-
-.link-button:hover {
-    cursor: pointer;
-}
-
-.best-sellers-box {
-    background-color: rgba(204, 204, 204, 0.3);
-    padding: 76px 0 51px;
-}
-
-.best-sellers-box-wrap {
-    display: flex;
-    align-items: center;
-}
-
-.best-sellers-box-img {
-    width: 385px;
-}
-
-.best-sellers-box-img img {
-    width: 100%;
-}
-
-.best-sellers-box-description {
-    width: calc(100% - 385px);
-    padding: 50px;
-}
-
-.best-sellers-box-description__title {
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.best-sellers-box-description__info {
-    max-width: 500px;
-    margin-top: 30px;
-}
-
-.best-sellers-box .link-button {
-    margin-top: 40px;
-}
-
-.best-sellers-box--reverse {
-    background-color: rgba(204, 204, 204, 0.6);
-}
-
-.best-sellers-box--reverse .best-sellers-box-wrap {
-    flex-direction: row-reverse;
-}
-
-.best-sellers-box--reverse .best-sellers-box-description {
-    text-align: right;
-}
-
-.best-sellers-box--reverse .best-sellers-box-description__info {
-    margin-left: auto;
 }
