@@ -11,8 +11,24 @@ body {
     padding: 0 15px;
 }
 
-.separator {
+.subtitle {
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 57px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitle::after {
+    content: '';
+    display: block;
     width: 170px;
-    margin: 0 auto;
     border-bottom: 1px solid #ec7979;
+    margin: 57px auto 0;
+}
+
+.remark {
+    color: #86878b;
+    text-align: center;
+    margin-top: 40px;
 }

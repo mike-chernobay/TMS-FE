@@ -3,17 +3,6 @@
     text-align: center;
 }
 
-.awesome__title {
-    font-size: 36px;
-    font-weight: 400;
-    padding: 57px 0;
-}
-
-.awesome__remark {
-    color: #86878b;
-    margin-top: 40px;
-}
-
 .awesome-wrap {
     display: flex;
     margin-top: 60px;
