@@ -1,0 +1,47 @@
+.main-info {
+    position: relative;
+}
+
+.main-info__img img {
+    width: 100%;
+}
+
+.main-info__content {
+    position: absolute;
+    left: 54px;
+    bottom: 66px;
+}
+
+.main-info__title {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 63px;
+    letter-spacing: 0.5px;
+    margin-bottom: 11px;
+}
+
+.main-info__tagline {
+    color: white;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+}
+
+.catalog-button {
+    color: rgba(33, 42, 47, 1);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 2px;
+    min-width: 180px;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 17px 0 15px;
+    border: none;
+}
+
+.catalog-button:not(:first-of-type) {
+    margin-left: 24px;
+}
