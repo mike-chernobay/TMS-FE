@@ -1,0 +1,76 @@
+.tabs-section {
+    padding: 50px 0;
+}
+
+.tab-content {
+    display: none;
+    border: 1px solid #e5e5e5;
+}
+
+.tab-content-description {
+    width: 60%;
+    padding-top: 55px;
+    padding-right: 30px;
+    padding-left: 100px;
+    padding-bottom: 55px;
+}
+
+.tab-content-description__title {
+    font-size: 24px;
+    line-height: 1.2em;
+    margin-bottom: 40px;
+}
+
+.tab-content-description__text {
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.2em;
+}
+
+.tab-content-description__text p + p {
+    margin-top: 10px;
+}
+
+.tab-content-img {
+    width: 40%;
+}
+
+.tab-content-img img {
+    width: 100%;
+    object-fit: contain;
+    vertical-align: bottom;
+}
+
+input[type='radio'] {
+    display: none;
+}
+
+input:checked + .tab {
+    border: 1px solid #e5e5e5;
+    border-bottom: 1px solid white;
+}
+
+.tab {
+    padding: 10px 15px;
+    display: inline-block;
+    margin-bottom: -1px;
+}
+
+.button {
+    color: white;
+    background-color: rgba(236, 121, 121, 1);
+    padding: 10px 30px;
+    border: none;
+}
+
+input[type='radio']:nth-of-type(1):checked ~ .tab-content:nth-of-type(1) {
+    display: flex;
+}
+
+input[type='radio']:nth-of-type(2):checked ~ .tab-content:nth-of-type(2) {
+    display: flex;
+}
+
+input[type='radio']:nth-of-type(3):checked ~ .tab-content:nth-of-type(3) {
+    display: flex;
+}
