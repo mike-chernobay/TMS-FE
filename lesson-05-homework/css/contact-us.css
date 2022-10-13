@@ -1,0 +1,47 @@
+.contact-us {
+    padding: 50px 0;
+}
+
+.contact-us-form {
+    margin-top: 73px;
+    text-align: center;
+}
+
+.form-wrap {
+    display: flex;
+}
+
+.form-wrap > * {
+    flex: 1;
+}
+
+.contact-us-form input,
+.contact-us-form textarea {
+    border: none;
+    border-bottom: 1px solid rgba(189, 189, 189, 1);
+    padding: 16px 0;
+    width: 100%;
+    outline: none;
+}
+
+.contact-us-form textarea {
+    margin-left: 30px;
+    height: 100%;
+    resize: none;
+}
+
+.contact-us-form * ::placeholder {
+    color: rgba(189, 189, 189, 1);
+    text-transform: capitalize;
+    font-family: 'Open Sans';
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.form-inputs * {
+    display: block;
+}
+
+.contact-us-form .button {
+    margin-top: 50px;
+}

@@ -32,3 +32,10 @@ body {
     text-align: center;
     margin-top: 40px;
 }
+
+.button {
+    color: white;
+    background-color: rgba(236, 121, 121, 1);
+    padding: 10px 30px;
+    border: none;
+}

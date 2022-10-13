@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+    font-weight: 700;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+.custom-checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox label {
+    color: #413a3a;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.custom-checkbox label::before {
+    content: '';
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 5px solid dodgerblue;
+    border-radius: 5px;
+    margin-right: 7px;
+}
+
+.custom-checkbox label::after {
+    content: '';
+    display: none;
+    width: 20px;
+    height: 12px;
+    border-bottom: 5px solid tomato;
+    border-left: 5px solid tomato;
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 12px;
+    top: 12px;
+}
+
+.custom-checkbox input:checked ~ label::after {
+    display: block;
+}
