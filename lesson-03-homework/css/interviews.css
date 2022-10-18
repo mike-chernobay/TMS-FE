@@ -25,11 +25,13 @@
 .interviews-cards {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .interviews-card {
     text-align: center;
     width: 30%;
+    min-width: 351px;
 }
 
 .interviews-card__img {
@@ -57,4 +59,11 @@
 
 .interviews-card__info span {
     display: block;
+}
+
+@media (max-width: 1200px) {
+    .interviews-cards {
+        justify-content: center;
+        gap: 40px;
+    }
 }

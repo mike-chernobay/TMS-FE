@@ -25,6 +25,7 @@
 .best-sellers-wrap {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .best-sellers-card {
@@ -53,4 +54,11 @@
     font-size: 17px;
     line-height: 20px;
     margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+    .best-sellers-wrap {
+        justify-content: center;
+        gap: 40px;
+    }
 }
