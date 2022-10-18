@@ -2,15 +2,23 @@
     position: relative;
 }
 
+.main-info__img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -10;
+}
+
 .main-info__img img {
     width: 100%;
+    height: 100%;
     vertical-align: bottom;
+    object-fit: cover;
 }
 
 .main-info__content {
-    position: absolute;
-    left: 54px;
-    bottom: 66px;
+    padding: 504px 54px 66px;
 }
 
 .main-info__title {
@@ -19,6 +27,7 @@
     font-weight: 700;
     line-height: 63px;
     letter-spacing: 0.5px;
+    margin-bottom: 11px;
 }
 
 .main-info__tagline {
@@ -26,5 +35,12 @@
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0.5px;
-    margin-top: 11px;
+    margin-bottom: 24px;
+}
+
+@media (max-width: 1024px) {
+    .main-info__content {
+        padding-top: calc(100% / 3);
+        text-align: center;
+    }
 }

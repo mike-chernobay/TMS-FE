@@ -39,3 +39,9 @@
 .service-link:not(:first-child) {
     margin-left: 16px;
 }
+
+@media (max-width: 800px) {
+    .catalog-menu {
+        display: none;
+    }
+}

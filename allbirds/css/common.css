@@ -21,13 +21,21 @@ body {
     text-align: center;
 }
 
+.img-insertion {
+    height: 542px;
+}
+
 .img-insertion img {
     width: 100%;
+    height: 100%;
     vertical-align: bottom;
+    object-fit: cover;
 }
 
 .buttons-wrap {
-    margin-top: 30px;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
 .buttons-wrap_center {
@@ -53,10 +61,6 @@ body {
     background-color: white;
     padding: 17px 0 15px;
     border: none;
-}
-
-.buttons-wrap .catalog-button:not(:first-of-type) {
-    margin-left: 24px;
 }
 
 .catalog-button_black {
@@ -149,4 +153,10 @@ body {
 .slider-button_next {
     right: 0;
     transform: rotate(-135deg);
+}
+
+@media (max-width: 1024px) {
+    .buttons-wrap {
+        justify-content: center;
+    }
 }
