@@ -35,6 +35,13 @@ body {
     max-width: 645px;
 }
 
+.section-note {
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: rgba(116, 121, 124, 1);
+}
+
 .img-insertion {
     height: 542px;
 }

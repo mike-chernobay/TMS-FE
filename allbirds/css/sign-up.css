@@ -1,0 +1,22 @@
+.sign-up-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 22px 0;
+}
+
+.sign-up-form input[type='email'] {
+    width: calc(100% / 2);
+    min-width: 300px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    padding: 15px 0;
+}
+
+.sign-up-form input[type='email']::placeholder {
+    font-size: 14px;
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.22);
+}
