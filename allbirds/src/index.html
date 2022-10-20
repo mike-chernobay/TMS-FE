@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="./scss/index.scss" />
         <script src="https://kit.fontawesome.com/02417a1b31.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
         <title>Allbirds</title>
@@ -234,8 +234,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-button slider-button_prev"></div>
-                    <div class="slider-button slider-button_next"></div>
+                    <div class="slider-button slider-button--prev"></div>
+                    <div class="slider-button slider-button--next"></div>
                 </div>
             </div>
         </section>
@@ -279,8 +279,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-button slider-button_prev"></div>
-                    <div class="slider-button slider-button_next"></div>
+                    <div class="slider-button slider-button--prev"></div>
+                    <div class="slider-button slider-button--next"></div>
                 </div>
             </div>
         </section>
@@ -326,8 +326,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="slider-button slider-button_prev"></div>
-                    <div class="slider-button slider-button_next"></div>
+                    <div class="slider-button slider-button--prev"></div>
+                    <div class="slider-button slider-button--next"></div>
                 </div>
             </div>
         </section>
@@ -427,24 +427,24 @@
             const collectionsOpt = {
                 ...swiperOpt,
                 navigation: {
-                    nextEl: '.swiper-collections ~ .slider-button.slider-button_next',
-                    prevEl: '.swiper-collections ~ .slider-button.slider-button_prev'
+                    nextEl: '.swiper-collections ~ .slider-button.slider-button--next',
+                    prevEl: '.swiper-collections ~ .slider-button.slider-button--prev'
                 }
             }
 
             const newArrivalsOpt = {
                 ...swiperOpt,
                 navigation: {
-                    nextEl: '.swiper-new-arrivals ~ .slider-button.slider-button_next',
-                    prevEl: '.swiper-new-arrivals ~ .slider-button.slider-button_prev'
+                    nextEl: '.swiper-new-arrivals ~ .slider-button.slider-button--next',
+                    prevEl: '.swiper-new-arrivals ~ .slider-button.slider-button--prev'
                 }
             }
 
             const storiesOpt = {
                 ...swiperOpt,
                 navigation: {
-                    nextEl: '.swiper-stories ~ .slider-button.slider-button_next',
-                    prevEl: '.swiper-stories ~ .slider-button.slider-button_prev'
+                    nextEl: '.swiper-stories ~ .slider-button.slider-button--next',
+                    prevEl: '.swiper-stories ~ .slider-button.slider-button--prev'
                 }
             }
 
