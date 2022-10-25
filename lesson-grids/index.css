@@ -1,0 +1,13 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-container * {
+    border: 1px dotted tomato;
+}
+
+.el-3 {
+    grid-column: 3 / 3;
+    grid-row: 1 / 3;
+}
