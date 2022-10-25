@@ -1,57 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-        <link rel="stylesheet" href="./scss/index.scss" type="" />
-        <title>MOGO. Creative Template</title>
-    </head>
-    <body>
-        <section class="main-info">
-            <div class="main-info-bg">
-                <img src="./img/main-info-bg.jpg" alt="main-info-bg" />
-            </div>
-            <div class="main-info-overlay"></div>
-            <div class="container">
-                <div class="swiper main-info-swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <h2>Creative Template</h2>
-                            <h1>Welcome to MoGo</h1>
-                            <button>learn more</button>
-                        </div>
-                        <div class="swiper-slide"><h2>Work</h2></div>
-                        <div class="swiper-slide"><h2>About</h2></div>
-                        <div class="swiper-slide"><h2>Contacts</h2></div>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <title>MOGO. Creative Template</title>
+</head>
+
+<body>
+    <section class="main-info">
+        <div class="main-info-bg">
+            <img src="./img/main-info-bg.jpg" alt="main-info-bg" />
+        </div>
+        <div class="main-info-overlay"></div>
+        <div class="container">
+            <div class="swiper main-info-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h2>Creative Template</h2>
+                        <h1>Welcome to MoGo</h1>
+                        <button>learn more</button>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-slide">
+                        <h2>Work</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2>About</h2>
+                    </div>
+                    <div class="swiper-slide">
+                        <h2>Contacts</h2>
+                    </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper('.main-info-swiper', {
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                    bulletClass: 'main-info-swiper-bullet',
-                    bulletActiveClass: 'main-info-swiper-bullet-active',
-                    renderBullet: function (index, className) {
-                        const bulletNames = ['intro', 'work', 'about', 'contacts']
-                        let bulletNum = index < 9 ? '0' + (index + 1) : index + 1
-                        let bulletName = bulletNames[index] || 'no name'
-                        return `<div class="${className}"><span class="${className + '-num'}">${bulletNum}</span><span class="${
-                            className + '-name'
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.main-info-swiper', {
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                bulletClass: 'main-info-swiper-bullet',
+                bulletActiveClass: 'main-info-swiper-bullet-active',
+                renderBullet: function (index, className) {
+                    const bulletNames = ['intro', 'work', 'about', 'contacts']
+                    let bulletNum = index < 9 ? '0' + (index + 1) : index + 1
+                    let bulletName = bulletNames[index] || 'no name'
+                    return `<div class="${className}"><span class="${className + '-num'}">${bulletNum}</span><span class="${className + '-name'
                         }">${bulletName}</span></div>`
-                    }
                 }
-            })
-        </script>
-    </body>
+            }
+        })
+    </script>
+</body>
+
 </html>
