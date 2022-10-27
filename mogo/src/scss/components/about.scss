@@ -1,0 +1,51 @@
+.about {
+    @include section-padding();
+
+    &-wrap {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 58px 0;
+    }
+
+    &-img {
+        min-width: 370px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            vertical-align: bottom;
+            object-fit: cover;
+        }
+
+        &__overlay {
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: -16px;
+            left: -16px;
+            background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
+            opacity: 0;
+            transition: 0.5s;
+
+            span {
+                text-transform: uppercase;
+            }
+
+            .about-img:hover & {
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -7,11 +7,45 @@ body {
 }
 
 h1 {
-    font-family: 'Montserrat';
+    @include h1();
 }
 
 h2 {
-    font-family: 'Kaushan Script';
+    @include h2();
+}
+
+.section-title {
+    @include h1();
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 42px;
+    position: relative;
+    padding: 44px 0;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 170px;
+        height: 4px;
+        background-color: #f38281;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.section-subtitle {
+    @include h2();
+    font-size: 30px;
+    line-height: 44px;
+}
+
+.section-info {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    padding: 38px 0;
 }
 
 .container {
