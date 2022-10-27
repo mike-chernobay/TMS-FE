@@ -1,5 +1,8 @@
-@import './fonts.scss';
-@import './reset.scss';
-@import './common.scss';
-@import './main-info.scss';
-@import './swiper.scss';
+@import './base/fonts';
+@import './base/reset';
+@import './base/mixins';
+@import './base/common';
+
+@import './components/header.scss';
+@import './components/burger.scss';
+@import './components/main-info.scss';

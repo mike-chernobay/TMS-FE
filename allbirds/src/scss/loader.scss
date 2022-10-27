@@ -1,0 +1,123 @@
+$size: 50px;
+$gap: 2px;
+$duration: 3s;
+
+.loader-screen {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+.loader-screen.hidden {
+    display: none;
+}
+
+.loader {
+    position: absolute;
+    width: 2 * ($size + $gap);
+    height: 2 * ($size + $gap);
+    animation: rotation $duration linear infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &-item {
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+        position: absolute;
+
+        &:nth-child(1) {
+            background-color: tomato;
+            top: 0;
+            left: 0;
+            animation: toCenter1 $duration linear infinite;
+        }
+
+        &:nth-child(2) {
+            background-color: aquamarine;
+            top: 0;
+            left: $size + $gap;
+            animation: toCenter2 $duration linear infinite;
+        }
+
+        &:nth-child(3) {
+            background-color: darkorchid;
+            top: $size + $gap;
+            left: 0;
+            animation: toCenter3 $duration linear infinite;
+        }
+
+        &:nth-child(4) {
+            background-color: greenyellow;
+            top: $size + $gap;
+            left: $size + $gap;
+            animation: toCenter4 $duration linear infinite;
+        }
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes toCenter1 {
+    0%,
+    100% {
+        top: 0;
+        left: 0;
+    }
+    80% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes toCenter2 {
+    0%,
+    100% {
+        top: 0;
+        left: $size + $gap;
+    }
+    80% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes toCenter3 {
+    0%,
+    100% {
+        top: $size + $gap;
+        left: 0;
+    }
+    80% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes toCenter4 {
+    0%,
+    100% {
+        top: $size + $gap;
+        left: $size + $gap;
+    }
+    80% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
