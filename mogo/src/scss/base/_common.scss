@@ -4,18 +4,24 @@
 
 body {
     font-family: 'Raleway';
+    font-size: 18px;
+    line-height: 21px;
 }
 
 h1 {
-    @include h1();
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    text-align: center;
 }
 
 h2 {
-    @include h2();
+    font-family: 'Kaushan Script';
+    text-align: center;
 }
 
 .section-title {
-    @include h1();
+    text-transform: uppercase;
+    text-align: center;
     font-size: 36px;
     font-weight: 900;
     line-height: 42px;
@@ -36,14 +42,13 @@ h2 {
 }
 
 .section-subtitle {
-    @include h2();
+    font-family: 'Kaushan Script';
+    text-align: center;
     font-size: 30px;
     line-height: 44px;
 }
 
 .section-info {
-    font-size: 18px;
-    line-height: 21px;
     text-align: center;
     padding: 38px 0;
 }

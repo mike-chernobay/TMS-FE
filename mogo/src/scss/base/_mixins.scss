@@ -5,17 +5,6 @@
     height: 100%;
 }
 
-@mixin h1 {
-    font-family: 'Montserrat';
-    text-transform: uppercase;
-    text-align: center;
-}
-
-@mixin h2 {
-    font-family: 'Kaushan Script';
-    text-align: center;
-}
-
 @mixin section-padding {
     padding: 42px 0;
 }

@@ -3,15 +3,33 @@
 
     &-wrap {
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 30px;
+        align-items: center;
+        gap: 16px;
         padding: 58px 0;
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        @media (min-width: 1200px) {
+            gap: 30px;
+        }
     }
 
     &-img {
-        min-width: 370px;
+        width: 288px;
         position: relative;
+
+        @media (min-width: 1024px) {
+            width: 320px;
+        }
+
+        @media (min-width: 1200px) {
+            width: 370px;
+        }
 
         img {
             width: 100%;
@@ -22,30 +40,103 @@
 
         &__overlay {
             color: white;
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 500;
-            line-height: 28px;
+            line-height: 21px;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
             gap: 30px;
             position: absolute;
             width: 100%;
-            height: 100%;
-            top: -16px;
-            left: -16px;
+            height: 83px;
+            bottom: 0;
             background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
-            opacity: 0;
+            padding: 0 20px;
             transition: 0.5s;
+
+            @media (min-width: 1024px) {
+                font-size: 18px;
+                line-height: 21px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                top: -6px;
+                left: -6px;
+                opacity: 0;
+            }
+
+            @media (min-width: 1200px) {
+                font-size: 24px;
+                line-height: 28px;
+                top: -16px;
+                left: -16px;
+            }
 
             span {
                 text-transform: uppercase;
             }
 
             .about-img:hover & {
-                opacity: 1;
+                @media (min-width: 1024px) {
+                    opacity: 1;
+                }
             }
         }
+    }
+}
+
+.some-numbers {
+    background-color: #95e1d3;
+
+    &-wrap {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.number-card {
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    min-width: 144px;
+
+    &:not(:last-child) {
+        border-bottom: 1px solid white;
+
+        @media (min-width: 750px) {
+            border-bottom: none;
+        }
+    }
+
+    @media (min-width: 750px) {
+        border-left: 1px solid white;
+
+        &:last-child {
+            border-right: 1px solid white;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        min-width: 198px;
+    }
+
+    @media (min-width: 1200px) {
+        min-width: 234px;
+    }
+
+    &__value {
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 75px;
+    }
+
+    &__text {
+        display: block;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 28px;
+        margin-top: 20px;
     }
 }
