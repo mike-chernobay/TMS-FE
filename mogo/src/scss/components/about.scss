@@ -1,6 +1,4 @@
 .about {
-    @include section-padding();
-
     &-wrap {
         display: flex;
         flex-direction: column;

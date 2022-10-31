@@ -1,23 +1,9 @@
 .main-info {
     position: relative;
-    padding-top: 20px;
+    padding: 20px 0 0;
 
-    &-bg {
-        @include background();
-        z-index: -10;
-
-        img {
-            width: 100%;
-            height: 100%;
-            vertical-align: bottom;
-            object-fit: cover;
-        }
-    }
-
-    &-overlay {
-        @include background();
+    .background-overlay {
         background: linear-gradient(360deg, rgba(237, 215, 137, 0.9) 0%, rgba(233, 130, 131, 0.9) 100%);
-        z-index: -5;
     }
 
     .swiper-slide {

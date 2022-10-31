@@ -1,0 +1,47 @@
+.devices {
+    position: relative;
+
+    .background-overlay {
+        background-color: #ffffffcc;
+    }
+
+    &-tablet {
+        position: relative;
+        max-width: 286px;
+        margin: 70px auto 0;
+
+        @media (min-width: 1024px) {
+            max-width: 450px;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 670px;
+        }
+
+        img {
+            @include response-img();
+        }
+    }
+    &-mobile {
+        max-width: 85px;
+        position: absolute;
+        right: 28px;
+        bottom: -60px;
+
+        @media (min-width: 1024px) {
+            max-width: 136px;
+            right: -30px;
+            bottom: -70px;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 190px;
+            right: -45px;
+            bottom: -85px;
+        }
+
+        img {
+            @include response-img();
+        }
+    }
+}

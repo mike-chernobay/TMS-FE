@@ -1,10 +1,6 @@
-@mixin background {
-    position: absolute;
-    top: 0;
+@mixin response-img {
     width: 100%;
     height: 100%;
-}
-
-@mixin section-padding {
-    padding: 42px 0;
+    vertical-align: bottom;
+    object-fit: cover;
 }
