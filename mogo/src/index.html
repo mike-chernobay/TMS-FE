@@ -207,6 +207,96 @@
             <div class="container">
                 <div class="section-subtitle">Service</div>
                 <div class="section-title">What we do</div>
+                <p class="section-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien
+                    ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.
+                </p>
+                <div class="our-service-wrap">
+                    <div class="our-service-wrap__img">
+                        <img src="./img/our-service-img.jpg" alt="our-service-img" />
+                    </div>
+                    <div class="accordeon">
+                        <div class="accordeon-item">
+                            <input type="radio" name="job" id="job-photography" checked />
+                            <label for="job-photography">photography</label>
+                            <div class="job-info">
+                                <p class="job-info__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et
+                                    elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut
+                                    pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordeon-item">
+                            <input type="radio" name="job" id="job-creativity" />
+                            <label for="job-creativity">creativity</label>
+                            <div class="job-info">
+                                <p class="job-info__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et
+                                    elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut
+                                    pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordeon-item">
+                            <input type="radio" name="job" id="job-web-design" />
+                            <label for="job-web-design">web design</label>
+                            <div class="job-info">
+                                <p class="job-info__text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eros, nunc, rhoncus, id tincidunt tellus rhoncus ornare. Amet, et
+                                    elementum enim mattis. Purus volutpat sagittis ut adipiscing congue euismod sit enim fringilla. Proin viverra nibh in vel ut
+                                    pulvinar nec senectus. Justo, id ac facilisis fringilla fermentum sed nunc aenean.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-service-slider">
+                <div class="container">
+                    <div class="swiper our-service-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="slide__img">
+                                    <img src="./img/our-service-slide-img.svg" alt="" />
+                                </div>
+                                <div class="slide-info">
+                                    <p class="slide-info__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+                                        vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+                                    </p>
+                                    <span class="slide-info__sign">Jon Doe</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide__img">
+                                    <img src="./img/our-service-slide-img.svg" alt="" />
+                                </div>
+                                <div class="slide-info">
+                                    <p class="slide-info__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+                                        vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+                                    </p>
+                                    <span class="slide-info__sign">Mike Ch</span>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slide__img">
+                                    <img src="./img/our-service-slide-img.svg" alt="" />
+                                </div>
+                                <div class="slide-info">
+                                    <p class="slide-info__text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec diam platea ullamcorper feugiat amet. Id aliquet
+                                        vehicula feugiat arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+                                    </p>
+                                    <span class="slide-info__sign">Slava Ukraine</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -215,7 +305,7 @@
 
         <!-- Initialize Swiper -->
         <script>
-            var swiper = new Swiper('.main-info-swiper', {
+            let mainInfoSwiper = new Swiper('.main-info-swiper', {
                 autoplay: {
                     delay: 5000
                 },
@@ -230,6 +320,13 @@
                         let bulletName = bulletNames[index] || 'no name'
                         return `<div class="${className}"><div class="${className}-info"><span class="${className}-num">${bulletNum}</span><span class="${className}-name">${bulletName}</span></div></div>`
                     }
+                }
+            })
+
+            let ourServiceSwiper = new Swiper('.our-service-swiper', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev'
                 }
             })
         </script>

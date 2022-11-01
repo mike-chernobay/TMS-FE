@@ -1,0 +1,116 @@
+.our-service {
+    &-wrap {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        &__img {
+            flex: 1;
+        }
+
+        .accordeon {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+
+            &-item {
+                border: 1px solid #c6cbcd;
+
+                input {
+                    display: none;
+                }
+
+                label {
+                    display: block;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    padding: 32px 0 32px 100px;
+                    position: relative;
+                    cursor: pointer;
+
+                    &::before {
+                        content: '';
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        display: block;
+                        width: 36px;
+                        height: 36px;
+                        position: absolute;
+                        top: 50%;
+                        left: 20px;
+                        transform: translateY(-50%);
+                    }
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 22px;
+                        height: 22px;
+                        border-left: 2px solid #c6cbcd;
+                        border-bottom: 2px solid #c6cbcd;
+                        position: absolute;
+                        top: 50%;
+                        right: 30px;
+                        transform: translateY(-75%) rotate(-45deg);
+                        transition: 0.5s;
+                    }
+                }
+
+                .job-info {
+                    height: 0;
+                    overflow: hidden;
+                    border-top: 1px solid transparent;
+                    transition: 0.5s;
+                    padding: 0 22px;
+
+                    &__text {
+                        height: 100%;
+                        overflow-y: scroll;
+                        padding-right: 54px;
+
+                        &::-webkit-scrollbar {
+                            width: 7px;
+
+                            &-thumb {
+                                background: #95e1d3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .accordeon-item:nth-child(1) label::before {
+        background-image: url(../img/job-ico/job-photography.svg);
+    }
+
+    .accordeon-item:nth-child(2) label::before {
+        background-image: url(../img/job-ico/job-creativity.svg);
+    }
+
+    .accordeon-item:nth-child(3) label::before {
+        background-image: url(../img/job-ico/job-web-disign.svg);
+    }
+
+    .accordeon-item input:checked ~ label {
+        &::after {
+            transform: translateY(-75%) rotate(-225deg);
+        }
+    }
+
+    .accordeon-item input:checked ~ .job-info {
+        height: 154px;
+        border-top: 1px solid #c6cbcd;
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+
+    &-slider {
+        background-color: #f8f8f8;
+    }
+}
