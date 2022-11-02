@@ -66,6 +66,8 @@
                 </div>
             </div>
         </section>
+        <!-- What we do -->
+        <!-- Story about us -->
         <section class="about">
             <div class="container">
                 <div class="section-subtitle">What we do</div>
@@ -125,6 +127,8 @@
                 </div>
             </div>
         </section>
+        <!-- We worck with -->
+        <!-- Amazing services -->
         <section class="services">
             <div class="container">
                 <div class="section-subtitle">We worck with</div>
@@ -187,6 +191,8 @@
                 </div>
             </div>
         </section>
+        <!-- For all devices -->
+        <!-- Unique design -->
         <section class="devices">
             <div class="background-img">
                 <img src="./img/devices-bg.jpg" alt="devices-bg" />
@@ -203,6 +209,8 @@
                 </div>
             </div>
         </section>
+        <!-- Service -->
+        <!-- What we do -->
         <section class="our-service">
             <div class="container">
                 <div class="section-subtitle">Service</div>
@@ -254,7 +262,7 @@
             </div>
             <div class="our-service-slider">
                 <div class="container">
-                    <div class="swiper our-service-swiper">
+                    <div class="swiper mogo-swiper our-service-swiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="slide__img">
@@ -295,6 +303,43 @@
                         </div>
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Who we are -->
+        <!-- Meet our team -->
+        <section class="our-team">
+            <div class="container">
+                <div class="section-subtitle">Who we are</div>
+                <div class="section-title">Meet our team</div>
+                <p class="section-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien
+                    ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit fermentum risus feugiat.
+                </p>
+                <div class="members-list">
+                    <div class="member">
+                        <div class="member__img">
+                            <div class="img-overlay"></div>
+                            <img src="./img/our-team-dias.jpg" alt="dias" />
+                        </div>
+                        <div class="member__name unit-name unit--center">Kadin Dias</div>
+                        <div class="member__position unit-info unit--uppercase unit--center">founder, ceo</div>
+                    </div>
+                    <div class="member">
+                        <div class="member__img">
+                            <img src="./img/our-team-calzoni.jpg" alt="calzoni" />
+                        </div>
+                        <div class="member__name unit-name unit--center">Zain Calzoni</div>
+                        <div class="member__position unit-info unit--uppercase unit--center">designer</div>
+                    </div>
+                    <div class="member">
+                        <div class="member__img">
+                            <img src="./img/our-team-george.jpg" alt="george" />
+                        </div>
+                        <div class="member__name unit-name unit--center">Charlie George</div>
+                        <div class="member__position unit-info unit--uppercase unit--center">photographer</div>
                     </div>
                 </div>
             </div>
@@ -324,6 +369,13 @@
             })
 
             let ourServiceSwiper = new Swiper('.our-service-swiper', {
+                autoplay: {
+                    delay: 5000
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                },
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev'

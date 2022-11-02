@@ -1,0 +1,112 @@
+.mogo-swiper {
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 42px 0;
+
+        @media (min-width: 1024px) {
+            padding: 42px 100px;
+        }
+
+        .slide__img {
+            display: none;
+            width: 170px;
+            height: 170px;
+
+            @media (min-width: 1024px) {
+                display: block;
+            }
+
+            img {
+                @include responsive-img();
+            }
+        }
+
+        .slide-info {
+            flex: 1;
+
+            &__text {
+                color: #a9afb1;
+                font-size: 14px;
+                font-style: italic;
+                font-weight: 500;
+                line-height: 16px;
+
+                @media (min-width: 1024px) {
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+
+                @media (min-width: 1200px) {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+
+            &__sign {
+                display: flex;
+                align-items: center;
+                gap: 56px;
+                font-family: Kaushan Script;
+                font-size: 18px;
+                line-height: 26px;
+                margin-top: 21px;
+
+                @media (min-width: 1024px) {
+                    font-size: 24px;
+                    line-height: 34px;
+                }
+
+                @media (min-width: 1200px) {
+                    font-size: 30px;
+                    line-height: 44px;
+                }
+
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 47px;
+                    height: 4px;
+                    background-color: #f38281;
+
+                    @media (min-width: 1200px) {
+                        width: 70px;
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-pagination {
+        display: block;
+
+        @media (min-width: 1024px) {
+            display: none;
+        }
+
+        &-bullet {
+            border: 1px solid #c6cbcd;
+            background-color: transparent;
+            width: 10px;
+            height: 10px;
+            opacity: 1;
+
+            &-active {
+                background-color: #c6cbcd;
+            }
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #c6cbcd;
+        border-width: 1px;
+        display: none;
+
+        @media (min-width: 1024px) {
+            display: block;
+        }
+    }
+}

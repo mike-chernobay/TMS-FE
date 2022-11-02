@@ -19,7 +19,7 @@
         }
 
         img {
-            @include response-img();
+            @include responsive-img();
         }
     }
     &-mobile {
@@ -41,7 +41,7 @@
         }
 
         img {
-            @include response-img();
+            @include responsive-img();
         }
     }
 }

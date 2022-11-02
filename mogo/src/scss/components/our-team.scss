@@ -1,0 +1,19 @@
+.members-list {
+    display: flex;
+    gap: 30px;
+    padding: 58px 0;
+
+    .member {
+        &__img {
+            position: relative;
+
+            img {
+                @include responsive-img();
+            }
+        }
+
+        &__name {
+            padding: 26px 0;
+        }
+    }
+}
