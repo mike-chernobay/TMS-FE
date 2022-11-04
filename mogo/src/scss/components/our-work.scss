@@ -1,15 +1,18 @@
 .works-gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 16%);
+    grid-template-rows: repeat(5, 152px);
+    max-width: 450px;
+    margin: 0 auto;
 
     @media (min-width: 1024px) {
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(5, 256px);
+        grid-template-rows: repeat(2, 256px);
+        max-width: none;
     }
 
     @media (min-width: 1200px) {
-        grid-template-rows: repeat(5, 378px);
+        grid-template-rows: repeat(2, 378px);
     }
 
     &__img {

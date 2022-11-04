@@ -1,0 +1,105 @@
+.feedbacks {
+    position: relative;
+
+    .background-overlay {
+        background-color: #ffffffe5;
+    }
+
+    &-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-top: 29px;
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+            margin-top: 40px;
+        }
+
+        @media (min-width: 1200px) {
+            margin-top: 60px;
+        }
+
+        .feedback-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+            @media (min-width: 1024px) {
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 50px;
+                width: calc((100% - 50px) / 2);
+            }
+
+            .feedback-img {
+                width: 88px;
+                height: 88px;
+
+                @media (min-width: 1200px) {
+                    width: 130px;
+                    height: 130px;
+                }
+
+                img {
+                    @include responsive-img();
+                }
+            }
+
+            .feedback-info {
+                flex: 1;
+                text-align: center;
+
+                @media (min-width: 1024px) {
+                    text-align: left;
+                }
+
+                .feedback-author {
+                    padding-bottom: 32px;
+                    position: relative;
+
+                    &__name {
+                        padding: 12px 0;
+                    }
+
+                    &::after {
+                        content: '';
+                        display: block;
+                        width: 170px;
+                        height: 4px;
+                        background-color: #f38281;
+                        position: absolute;
+                        left: 50%;
+                        bottom: 0;
+                        transform: translateX(-50%);
+
+                        @media (min-width: 1024px) {
+                            width: 47px;
+                            left: 0;
+                            transform: none;
+                        }
+
+                        @media (min-width: 1200px) {
+                            width: 70px;
+                        }
+                    }
+                }
+
+                .feedback-text {
+                    margin-top: 30px;
+
+                    @media (min-width: 1024px) {
+                        margin-top: 40px;
+                    }
+
+                    @media (min-width: 1200px) {
+                        margin-top: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
