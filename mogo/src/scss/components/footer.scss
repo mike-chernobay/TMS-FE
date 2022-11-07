@@ -1,0 +1,259 @@
+.footer {
+    background-color: #f8f8f8;
+
+    &-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        @media (min-width: 1024px) {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 20px;
+        }
+    }
+
+    .subscribe-form {
+        max-width: 530px;
+
+        @media (min-width: 1024px) {
+            max-width: none;
+            flex: 1;
+        }
+
+        .footer-logo {
+            width: 100px;
+            margin: 0 auto;
+            padding: 10px 0;
+
+            @media (min-width: 1024px) {
+                margin: 0;
+                margin-right: auto;
+            }
+
+            img {
+                @include responsive-img();
+            }
+        }
+
+        &-info {
+            color: #c6cbcd;
+            text-align: center;
+            padding: 10px 0;
+
+            @media (min-width: 1024px) {
+                text-align: left;
+            }
+        }
+
+        .followers-count {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            border-bottom: 1px solid #c6cbcd;
+            padding: 20px 0;
+
+            @media (min-width: 1024px) {
+                justify-content: flex-start;
+            }
+
+            &__value {
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 30px;
+
+                span {
+                    font-size: 14px;
+                    text-transform: uppercase;
+                }
+            }
+
+            &__text {
+                font-size: 14px;
+                line-height: 30px;
+                font-style: italic;
+                text-transform: uppercase;
+            }
+        }
+
+        .follow-us {
+            display: flex;
+            justify-content: space-between;
+            padding: 7px 0;
+
+            span {
+                color: #c6cbcd;
+                font-size: 12px;
+                font-style: italic;
+            }
+
+            &-links {
+                color: #95e1d3;
+                display: flex;
+                gap: 15px;
+
+                a {
+                    display: block;
+                    font-size: 14px;
+                }
+            }
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding-top: 30px;
+
+            @media (min-width: 1024px) {
+                flex-direction: row;
+                gap: 0;
+            }
+
+            input[type='email'] {
+                font-size: 14px;
+                line-height: 16px;
+                padding: 10px 30px;
+                outline: none;
+                border: 1px solid #c6cbcd;
+
+                &::placeholder {
+                    color: #c6cbcd;
+                }
+
+                @media (min-width: 1024px) {
+                    width: 50%;
+                    border-right: none;
+                }
+            }
+
+            input[type='submit'] {
+                display: block;
+                color: white;
+                background-color: #95e1d3;
+                font-size: 14px;
+                font-weight: 700;
+                line-height: 16px;
+                text-transform: uppercase;
+                outline: none;
+                padding: 10px 0;
+                border: none;
+
+                @media (min-width: 1024px) {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    .blogs {
+        max-width: 530px;
+
+        @media (min-width: 1024px) {
+            max-width: none;
+            flex: 1;
+        }
+
+        &-title {
+            color: #2d3033;
+            text-align: center;
+
+            @media (min-width: 1024px) {
+                text-align: left;
+            }
+        }
+
+        .blogs-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-top: 30px;
+
+            .blog-card {
+                display: flex;
+                gap: 14px;
+
+                &__img {
+                    width: 83px;
+
+                    @media (min-width: 1024px) {
+                        width: 115px;
+                    }
+
+                    @media (min-width: 1200px) {
+                        width: 170px;
+                    }
+
+                    img {
+                        @include responsive-img();
+                    }
+                }
+
+                &-info {
+                    flex: 1;
+
+                    &__title {
+                        color: #2d3033;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 16px;
+                        text-transform: uppercase;
+                    }
+
+                    &__date {
+                        color: #2d3033;
+                        font-size: 12px;
+                        line-height: 14px;
+                        padding: 5px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .instagram {
+        width: 100%;
+        max-width: 530px;
+
+        @media (min-width: 1024px) {
+            width: auto;
+            max-width: none;
+        }
+
+        &-title {
+            color: #2d3033;
+            text-align: center;
+
+            @media (min-width: 1024px) {
+                text-align: left;
+            }
+        }
+
+        &-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 30px;
+
+            &__img {
+                img {
+                    @include responsive-img();
+                }
+            }
+        }
+
+        &-link {
+            display: block;
+            color: #2d3033;
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: uppercase;
+            text-decoration: underline;
+            margin-top: 30px;
+            text-align: center;
+
+            @media (min-width: 1024px) {
+                text-align: left;
+            }
+        }
+    }
+}

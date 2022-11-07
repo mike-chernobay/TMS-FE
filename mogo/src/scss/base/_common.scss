@@ -31,6 +31,10 @@ section {
     padding: 40px 0;
 }
 
+footer {
+    padding-top: 40px;
+}
+
 .background-img {
     z-index: -10;
     img {
@@ -50,6 +54,10 @@ section {
     line-height: 42px;
     position: relative;
     padding: 44px 0;
+
+    &--red {
+        color: #f38281;
+    }
 
     &::after {
         content: '';
