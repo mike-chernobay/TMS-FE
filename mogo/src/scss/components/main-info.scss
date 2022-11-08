@@ -177,18 +177,25 @@
     }
 
     &-button {
-        color: #ffffff;
+        color: white;
         display: block;
         min-width: 284px;
         font-size: 18px;
         font-weight: 700;
         line-height: 21px;
         text-transform: uppercase;
-        background: transparent;
-        border: 4px solid #ffffff;
+        background-color: transparent;
+        border: 4px solid white;
         padding: 16px 0;
         margin: 50px auto 0;
         cursor: pointer;
+        transition: 0.5s;
+
+        &:hover {
+            color: #e4be8d;
+            background-color: white;
+            border: 4px solid #e4be8d;
+        }
 
         @media (min-width: 1024px) {
             min-width: 318px;
